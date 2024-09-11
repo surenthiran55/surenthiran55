@@ -1,0 +1,143 @@
+import java.utill.scanner;
+class employee
+{
+string emp_name;
+int emp_id;
+string adress;
+string mail_id;
+int mail_id;
+double HRA,DA,BP,SCF,PF,GS,NS;
+void display()
+{
+system.out.print\n(emp_name);
+system.out.print\n(emp_id);
+system.out.print\n(mail_id);
+system.out.print\n(mobile_no);
+system.out.print\n(address);
+}
+class programmer extends employee
+{
+int BP;
+void display()
+{
+DA=0.97*BP;
+HRA=0.10*BP;
+PF=0.12*BP;
+SCF=0.001*BP;
+GS=HRA+PF+DA+SCF;
+NS=GS-PF-SCF;
+system.out.print\n(BP);
+system.out.print\n("DA:"+DA);
+system.out.print\n("HRA:"+HRA);
+system.out.print\n("PF:"+PF);
+system.out.print\n("SCF:"+SCF);
+system.out.print\n("GS:"+GS);
+system.out.print\n("Net SALARY:"+NS);
+}
+}
+class associate_professor extends
+employee
+{
+int BP:
+void display()
+{
+DA=0.97*BP;
+HRA=0.10*BP;
+PF=0.12*BP;
+SCF=0.001*BP;
+GS=HRA+PF+DA+SCF;
+NS=GS-PF-SCF;
+system.out.print\n(BP);
+system.out.print\n("DA:"+DA);
+system.out.print\n("HRA:"+HRA);
+system.out.print\n("PF:"+PF);
+system.out.print\n("SCF:"+SCF);
+system.out.print\n("GS:"+GS);
+system.out.print\n("Net SALARY:"+NS);
+}
+}
+class professor extends employee
+{
+int BP;
+void display()
+{
+DA=0.97*BP;
+HRA=0.10*BP;
+PF=0.12*BP;
+SCF=0.001*BP;
+GS=HRA+PF+DA+SCF;
+NS=GS-PF-SCF;
+system.out.print\n(BP);
+system.out.print\n("DA:"+DA);
+system.out.print\n("HRA:"+HRA);
+system.out.print\n("PF:"+PF);
+system.out.print\n("SCF:"+SCF);
+system.out.print\n("GS:"+GS);
+system.out.print\n("Net SALARY:"+NS);
+}
+}
+class main
+{
+public static void main(string args[])
+{
+system.out.print\n("\n 1.programmer \n 2.assistant_professor \n 3.associate_professor \n 4.professor");
+scanner input=new scanner(system.in);
+system.out.print("enter an integer:");
+switch(ch)
+{
+case 1:
+employee e1=new employee();
+programmer p1=new programmer();
+e1.emp_name="
+e1.address="
+e1.mail_id="
+e1.emp_id=101;
+e1.mobile_no=768925;
+p1.BP=15000;
+p1.display();
+e1.display();
+break;
+case2:
+employee e2=new employee();
+assistant_professor p2=new assistant_professor();
+e2.emp_name="
+e2.address="
+e2.mail_id="
+e2.emp_id=101;
+e2.mobile_no=768925;
+p2.BP=15000;
+p2.display();
+e2.display();
+break;
+case3:
+employee e3=new employee();
+associate_professor p3=new associate_professor();
+e3.emp_name="
+e3.address="
+e3.mail_id="
+e3.emp_id=101;
+e3.mobile_no=768925;
+p3.BP=15000;
+p3.display();
+e3.display();
+break;
+case4:
+employee e4=new employee();
+professor p4=new professor();
+e4.emp_name="
+e4.address="
+e4.mail_id="
+e4.emp_id=101;
+e4.mobile_no=768925;
+p4.BP=15000;
+p4.display();
+e4.display();
+break;
+case5:
+system.out.print\n("Thank you");
+default:
+system.out.print\n("enter correct choice");
+}
+}
+}
+
